@@ -1,0 +1,29 @@
+---
+import '../styles/global.css';
+const { title } = Astro.props;
+const pageTitle = title ? `${title} — Polymath's Inventory` : "Polymath's Inventory";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content="Free resources to learn any skill, organized by field." />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="/" class="brand">Polymath's Inventory</a>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        Polymath's Inventory — a free, open directory of free learning resources.
+      </div>
+    </footer>
+  </body>
+</html>
