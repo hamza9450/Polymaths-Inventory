@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { fields } from '../data/resources.js';
 const { title } = Astro.props;
 const pageTitle = title ? `${title} — Polymath's Inventory` : "Polymath's Inventory";
 ---
@@ -17,9 +18,18 @@ const pageTitle = title ? `${title} — Polymath's Inventory` : "Polymath's Inve
         <a href="/" class="brand">Polymath's Inventory</a>
       </div>
     </header>
-    <main class="wrap">
-      <slot />
-    </main>
+    <div class="layout-shell">
+      <nav class="sidebar">
+        <ul class="sidebar-list">
+          {fields.map(field => (
+            <li><a href={`/skills/${field.slug}/`}>{field.name}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <main class="main-content">
+        <slot />
+      </main>
+    </div>
     <footer class="site-footer">
     </footer>
   </body>

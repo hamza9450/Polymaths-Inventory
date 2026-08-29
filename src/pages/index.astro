@@ -1,14 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { fields } from '../data/resources.js';
 ---
 <BaseLayout>
   <h1 class="homepage-heading">Polymath's Inventory</h1>
   <p class="homepage-sub">Free Resources to learn anything</p>
-
-  <ul class="field-list">
-    {fields.map(field => (
-      <li><a href={`/skills/${field.slug}/`}>{field.name}</a></li>
-    ))}
-  </ul>
 </BaseLayout>
