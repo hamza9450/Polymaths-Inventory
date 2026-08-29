@@ -36,6 +36,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 16px;
+  padding: 0 12px;
 }
 
 .menu-toggle {
@@ -128,8 +129,8 @@ header.site-header a.brand {
 
 .homepage-heading {
   font-weight: 700;
-  font-size: 2.2rem;
-  margin: 48px 0 8px;
+  font-size: 3.2rem;
+  margin: 48px 0 16px;
   color: var(--navy);
   text-align: center;
 }
@@ -138,6 +139,7 @@ header.site-header a.brand {
   margin: 0 0 40px;
   color: var(--navy);
   font-weight: 400;
+  font-size: 1.4rem;
   text-align: center;
 }
 
