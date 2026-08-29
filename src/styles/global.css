@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 :root {
-  --beige: #F2EDE4;
+  --beige: #F8F5EE;
   --navy: #1B2A4A;
   --navy-muted: #3B4C6B;
 }
@@ -34,7 +34,6 @@ a:hover {
 
 header.site-header {
   padding: 24px 0;
-  border-bottom: 1px solid var(--navy);
 }
 
 header.site-header a.brand {
@@ -122,7 +121,6 @@ ul.resource-list li {
 footer.site-footer {
   margin-top: 60px;
   padding: 24px 0;
-  border-top: 1px solid var(--navy);
   font-size: 0.85rem;
   color: var(--navy);
 }
