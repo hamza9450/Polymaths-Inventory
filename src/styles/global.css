@@ -82,11 +82,13 @@ a:hover {
 
 .sidebar-list li {
   border-bottom: 1px solid var(--navy);
+  padding-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .sidebar-list a {
   display: block;
-  padding: 14px 4px;
+  padding: 14px 4px 0;
   text-decoration: none;
 }
 
@@ -129,12 +131,14 @@ header.site-header a.brand {
   font-size: 2.2rem;
   margin: 48px 0 8px;
   color: var(--navy);
+  text-align: center;
 }
 
 .homepage-sub {
   margin: 0 0 40px;
   color: var(--navy);
   font-weight: 400;
+  text-align: center;
 }
 
 .field-list {
@@ -162,9 +166,9 @@ header.site-header a.brand {
 }
 
 h1.field-title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.8rem;
-  margin: 8px 0 40px;
+  margin: 24px 0 40px;
   color: var(--navy);
 }
 
@@ -173,7 +177,7 @@ h2.subheading {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin: 40px 0 18px;
+  margin: 40px 0 24px;
   color: var(--navy);
 }
 
