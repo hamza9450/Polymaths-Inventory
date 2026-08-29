@@ -93,8 +93,6 @@ h2.subheading {
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid var(--navy);
-  padding-bottom: 8px;
   margin: 40px 0 18px;
   color: var(--navy);
 }
